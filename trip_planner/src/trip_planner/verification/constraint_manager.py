@@ -12,12 +12,22 @@ import json
 from typing import Dict, List, Optional, Any, Union, Callable
 from enum import Enum
 
-from trip_planner.maia_architecture import (
-    Constraint, 
-    TravelPlan, 
-    AgentLayer,
-    PlanningState
-)
+try:
+    # When installed as a package
+    from trip_planner.maia_architecture import (
+        Constraint, 
+        TravelPlan, 
+        AgentLayer,
+        PlanningState
+    )
+except ImportError:
+    # When running directly from source
+    from src.trip_planner.maia_architecture import (
+        Constraint, 
+        TravelPlan, 
+        AgentLayer,
+        PlanningState
+    )
 
 
 class VerificationResult(Enum):

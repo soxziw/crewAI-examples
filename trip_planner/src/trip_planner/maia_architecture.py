@@ -16,7 +16,15 @@ while ensuring constraints are verified throughout the planning process.
 
 from enum import Enum
 from typing import Dict, List, Optional, Union
-from pydantic import BaseModel, Field
+try:
+    from pydantic.v1 import BaseModel, Field
+except ImportError:
+    try:
+        from pydantic import BaseModel, Field
+    except ImportError:
+        # Fallback for very old pydantic
+        from pydantic import BaseModel
+        from pydantic import Field
 
 
 class ConstraintType(Enum):

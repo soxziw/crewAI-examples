@@ -1,0 +1,3250 @@
+{
+  "destination_region": "USA",
+  "travel_dates": {
+    "start_date": "2025-06-11",
+    "end_date": "2025-06-21"
+  },
+  "cities": [
+    {
+      "name": "San Francisco",
+      "country": "USA",
+      "days": 5,
+      "justification": "San Francisco offers an excellent mix of traditional culture and modern technology, from historic sites to Silicon Valley innovation.",
+      "key_attractions": [
+        "Golden Gate Bridge",
+        "Alcatraz Island",
+        "Fisherman's Wharf",
+        "Chinatown",
+        "Silicon Valley"
+      ],
+      "visit_order": 1
+    },
+    {
+      "name": "Los Angeles",
+      "country": "USA",
+      "days": 5,
+      "justification": "Los Angeles is known for its entertainment industry, diverse cultural neighborhoods, and blend of traditional Hollywood history and modern tech scene.",
+      "key_attractions": [
+        "Hollywood Walk of Fame",
+        "Getty Center",
+        "Santa Monica Pier",
+        "Griffith Observatory",
+        "Venice Beach"
+      ],
+      "visit_order": 2
+    }
+  ],
+  "intercity_transit": [
+    {
+      "from": "New York City, NY",
+      "to": "San Francisco, CA",
+      "date": "2025-06-11",
+      "mode": "flight",
+      "details": {
+        "provider": "United Airlines",
+        "flight_number": "UA2217",
+        "departure_time": "8:00 AM",
+        "arrival_time": "11:30 AM",
+        "duration": "6h 30m",
+        "cost": 450,
+        "booking_info": "www.united.com or major booking sites"
+      }
+    },
+    {
+      "from": "San Francisco, CA",
+      "to": "Los Angeles, CA",
+      "date": "2025-06-16",
+      "mode": "train",
+      "details": {
+        "provider": "Amtrak Coast Starlight",
+        "departure_time": "10:00 AM",
+        "arrival_time": "9:00 PM",
+        "duration": "11h 00m",
+        "cost": 65,
+        "booking_info": "www.amtrak.com - scenic coastal route"
+      }
+    },
+    {
+      "from": "Los Angeles, CA",
+      "to": "New York City, NY",
+      "date": "2025-06-21",
+      "mode": "flight",
+      "details": {
+        "provider": "Delta Airlines",
+        "flight_number": "DL324",
+        "departure_time": "2:15 PM",
+        "arrival_time": "10:45 PM",
+        "duration": "5h 30m",
+        "cost": 480,
+        "booking_info": "www.delta.com or major booking sites"
+      }
+    }
+  ],
+  "accommodations": {
+    "San Francisco": [
+      {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 39690,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      {
+        "name": "Fraser Residence Nankai Osaka",
+        "type": "serviced apartment",
+        "location": "Near Namba Station",
+        "proximity_to_activities": "Close to Dotonbori and transportation",
+        "price_per_night": 125,
+        "total_price": 36750,
+        "rating": 4.4,
+        "amenities": [
+          "Kitchen",
+          "Free WiFi",
+          "Washing machine",
+          "Fitness center"
+        ],
+        "pros": [
+          "Spacious rooms",
+          "Full kitchen",
+          "Homey feel"
+        ],
+        "cons": [
+          "Fewer hotel services",
+          "Farther from some attractions"
+        ],
+        "booking_info": "Available on major booking platforms",
+        "cancellation_policy": "Free cancellation up to 5 days before check-in"
+      }
+    ],
+    "Los Angeles": [
+      {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 4725,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      {
+        "name": "Fraser Residence Nankai Osaka",
+        "type": "serviced apartment",
+        "location": "Near Namba Station",
+        "proximity_to_activities": "Close to Dotonbori and transportation",
+        "price_per_night": 125,
+        "total_price": 4375,
+        "rating": 4.4,
+        "amenities": [
+          "Kitchen",
+          "Free WiFi",
+          "Washing machine",
+          "Fitness center"
+        ],
+        "pros": [
+          "Spacious rooms",
+          "Full kitchen",
+          "Homey feel"
+        ],
+        "cons": [
+          "Fewer hotel services",
+          "Farther from some attractions"
+        ],
+        "booking_info": "Available on major booking platforms",
+        "cancellation_policy": "Free cancellation up to 5 days before check-in"
+      }
+    ]
+  },
+  "activities": {
+    "San Francisco": [
+      {
+        "day": 1,
+        "date": "2026-03-11",
+        "activities": [
+          {
+            "name": "Dotonbori",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Umeda Sky Building",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for San Francisco day 1",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for San Francisco day 1",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 2,
+        "date": "2026-03-12",
+        "activities": [
+          {
+            "name": "Kuromon Market",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Sumiyoshi Taisha",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for San Francisco day 2",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for San Francisco day 2",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 3,
+        "date": "2026-03-13",
+        "activities": [
+          {
+            "name": "Osaka Aquarium",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Nara Day Trip",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for San Francisco day 3",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for San Francisco day 3",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 4,
+        "date": "2026-03-14",
+        "activities": [
+          {
+            "name": "Universal Studios Japan",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Tempozan Harbor Village",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for San Francisco day 4",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for San Francisco day 4",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 5,
+        "date": "2026-03-15",
+        "activities": [
+          {
+            "name": "Osaka Castle",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": true
+          },
+          {
+            "name": "Shinsekai",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for San Francisco day 5",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for San Francisco day 5",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      }
+    ],
+    "Los Angeles": [
+      {
+        "day": 1,
+        "date": "2026-03-30",
+        "activities": [
+          {
+            "name": "Dotonbori",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Umeda Sky Building",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for Los Angeles day 1",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for Los Angeles day 1",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 2,
+        "date": "2026-04-31",
+        "activities": [
+          {
+            "name": "Kuromon Market",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Sumiyoshi Taisha",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for Los Angeles day 2",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for Los Angeles day 2",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 3,
+        "date": "2026-04-1",
+        "activities": [
+          {
+            "name": "Osaka Aquarium",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Nara Day Trip",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for Los Angeles day 3",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for Los Angeles day 3",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 4,
+        "date": "2026-04-2",
+        "activities": [
+          {
+            "name": "Universal Studios Japan",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": false
+          },
+          {
+            "name": "Tempozan Harbor Village",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for Los Angeles day 4",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for Los Angeles day 4",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      },
+      {
+        "day": 5,
+        "date": "2026-04-3",
+        "activities": [
+          {
+            "name": "Osaka Castle",
+            "type": "sightseeing",
+            "description": "Popular attraction in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "3 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 30,
+            "booking_required": true
+          },
+          {
+            "name": "Shinsekai",
+            "type": "activity",
+            "description": "Interesting place to visit in Osaka",
+            "location": "Osaka",
+            "estimated_duration": "2 hours",
+            "opening_hours": "10:00 AM - 8:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          }
+        ],
+        "alternative_activities": [
+          {
+            "name": "Alternative activity 1 for Los Angeles day 5",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          },
+          {
+            "name": "Alternative activity 2 for Los Angeles day 5",
+            "reason_to_consider": "In case of rain or primary activity is unavailable"
+          }
+        ],
+        "estimated_total_cost": 45
+      }
+    ]
+  },
+  "dining": {
+    "San Francisco": [
+      {
+        "day": 1,
+        "date": "2026-03-11",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Brooklyn Roasting Company",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Mizuno Okonomiyaki",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Zuboraya",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "date": "2026-03-12",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Tosabori Chanot",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Kuromon Market food stalls",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Kushikatsu Daruma",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "date": "2026-03-13",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Len Osaka",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Endo Sushi",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Matsusaka Beef Yakiniku M",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "date": "2026-03-14",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Fujiya 1935 Bread",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Kinryu Ramen",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Hariju",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "date": "2026-03-15",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Hotel breakfast",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Takoyaki stands in Dotonbori",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Kani Doraku",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      }
+    ],
+    "Los Angeles": [
+      {
+        "day": 1,
+        "date": "2026-03-30",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Brooklyn Roasting Company",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Mizuno Okonomiyaki",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Zuboraya",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "date": "2026-04-31",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Tosabori Chanot",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Kuromon Market food stalls",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Kushikatsu Daruma",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "date": "2026-04-1",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Len Osaka",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Endo Sushi",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Matsusaka Beef Yakiniku M",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "date": "2026-04-2",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Fujiya 1935 Bread",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Kinryu Ramen",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Hariju",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "date": "2026-04-3",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Hotel breakfast",
+            "cuisine": "Japanese/Cafe",
+            "price_range": "$-$$",
+            "location": "Near accommodation",
+            "proximity_to_activities": "Convenient starting point",
+            "recommended_dishes": [
+              "Artisanal bread and coffee",
+              "Japanese breakfast set"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Takoyaki stands in Dotonbori",
+            "cuisine": "Osaka street food",
+            "price_range": "$-$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Famous food district",
+            "recommended_dishes": [
+              "Takoyaki",
+              "Okonomiyaki",
+              "Fresh sushi"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Kani Doraku",
+            "cuisine": "Osaka specialties",
+            "price_range": "$$$",
+            "location": "Dotonbori/Namba area",
+            "proximity_to_activities": "Evening entertainment district",
+            "recommended_dishes": [
+              "Crab feast",
+              "Kushikatsu set",
+              "Premium yakiniku beef"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1 week in advance through hotel"
+          }
+        ]
+      }
+    ]
+  },
+  "local_transit": {
+    "San Francisco": [
+      {
+        "day": 1,
+        "date": "2026-04-2",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 1",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 1",
+            "to": "Lunch venue 1",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 1",
+            "to": "Afternoon activity 1",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 1",
+            "to": "Dinner venue 1",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 1",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 2,
+        "date": "2026-04-3",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 2",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 2",
+            "to": "Lunch venue 2",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 2",
+            "to": "Afternoon activity 2",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 2",
+            "to": "Dinner venue 2",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 2",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 3,
+        "date": "2026-04-4",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 3",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 3",
+            "to": "Lunch venue 3",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 3",
+            "to": "Afternoon activity 3",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 3",
+            "to": "Dinner venue 3",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 3",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 4,
+        "date": "2026-04-5",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 4",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 4",
+            "to": "Lunch venue 4",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 4",
+            "to": "Afternoon activity 4",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 4",
+            "to": "Dinner venue 4",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 4",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 5,
+        "date": "2026-04-6",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 5",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 5",
+            "to": "Lunch venue 5",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 5",
+            "to": "Afternoon activity 5",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 5",
+            "to": "Dinner venue 5",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 5",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      }
+    ],
+    "Los Angeles": [
+      {
+        "day": 1,
+        "date": "2026-04-2",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 1",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 1",
+            "to": "Lunch venue 1",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 1",
+            "to": "Afternoon activity 1",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 1",
+            "to": "Dinner venue 1",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 1",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 2,
+        "date": "2026-04-3",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 2",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 2",
+            "to": "Lunch venue 2",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 2",
+            "to": "Afternoon activity 2",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 2",
+            "to": "Dinner venue 2",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 2",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 3,
+        "date": "2026-04-4",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 3",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 3",
+            "to": "Lunch venue 3",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 3",
+            "to": "Afternoon activity 3",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 3",
+            "to": "Dinner venue 3",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 3",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 4,
+        "date": "2026-04-5",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 4",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 4",
+            "to": "Lunch venue 4",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 4",
+            "to": "Afternoon activity 4",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 4",
+            "to": "Dinner venue 4",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 4",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      },
+      {
+        "day": 5,
+        "date": "2026-04-6",
+        "journeys": [
+          {
+            "from": "Accommodation",
+            "to": "Morning activity 5",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to nearest station, 5 min walk",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (faster but \u00a51500)",
+              "Bus (slower but scenic)"
+            ]
+          },
+          {
+            "from": "Morning activity 5",
+            "to": "Lunch venue 5",
+            "recommended_mode": "Walking",
+            "route_details": "Short walk through interesting neighborhood",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 0,
+            "alternative_options": [
+              "Taxi (not recommended unless bad weather)"
+            ]
+          },
+          {
+            "from": "Lunch venue 5",
+            "to": "Afternoon activity 5",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to destination station",
+            "estimated_time": "30 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Bus (more scenic but slower)"
+            ]
+          },
+          {
+            "from": "Afternoon activity 5",
+            "to": "Dinner venue 5",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line to dining area",
+            "estimated_time": "20 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if tired, \u00a51200)"
+            ]
+          },
+          {
+            "from": "Dinner venue 5",
+            "to": "Accommodation",
+            "recommended_mode": "Subway",
+            "route_details": "Take subway line back to accommodation",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 220,
+            "alternative_options": [
+              "Taxi (recommended if late, \u00a51500)"
+            ]
+          }
+        ],
+        "daily_transit_cost": 1200
+      }
+    ]
+  },
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-03-25",
+      "city": "San Francisco",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 39690,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Dotonbori",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Umeda Sky Building",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Brooklyn Roasting Company",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Mizuno Okonomiyaki",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Zuboraya",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 1",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 1",
+          "to": "Lunch venue 1",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 1",
+          "to": "Afternoon activity 1",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 1",
+          "to": "Dinner venue 1",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 1",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-03-26",
+      "city": "San Francisco",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 39690,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Kuromon Market",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Sumiyoshi Taisha",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Tosabori Chanot",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Kuromon Market food stalls",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Kushikatsu Daruma",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 2",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 2",
+          "to": "Lunch venue 2",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 2",
+          "to": "Afternoon activity 2",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 2",
+          "to": "Dinner venue 2",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 2",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-03-27",
+      "city": "San Francisco",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 39690,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Osaka Aquarium",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Nara Day Trip",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Len Osaka",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Endo Sushi",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Matsusaka Beef Yakiniku M",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 3",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 3",
+          "to": "Lunch venue 3",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 3",
+          "to": "Afternoon activity 3",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 3",
+          "to": "Dinner venue 3",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 3",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-03-28",
+      "city": "San Francisco",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 39690,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Universal Studios Japan",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Tempozan Harbor Village",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Fujiya 1935 Bread",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Kinryu Ramen",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Hariju",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 4",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 4",
+          "to": "Lunch venue 4",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 4",
+          "to": "Afternoon activity 4",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 4",
+          "to": "Dinner venue 4",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 4",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-03-29",
+      "city": "San Francisco",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 39690,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Osaka Castle",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": true
+        },
+        {
+          "name": "Shinsekai",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Hotel breakfast",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Takoyaki stands in Dotonbori",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Kani Doraku",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 5",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 5",
+          "to": "Lunch venue 5",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 5",
+          "to": "Afternoon activity 5",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 5",
+          "to": "Dinner venue 5",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 5",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ],
+      "special_event": "Transit to Los Angeles"
+    },
+    {
+      "day": 6,
+      "date": "2026-03-30",
+      "city": "Los Angeles",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 4725,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Dotonbori",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Umeda Sky Building",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Brooklyn Roasting Company",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Mizuno Okonomiyaki",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Zuboraya",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 1",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 1",
+          "to": "Lunch venue 1",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 1",
+          "to": "Afternoon activity 1",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 1",
+          "to": "Dinner venue 1",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 1",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ],
+      "special_event": "Transit from San Francisco to Los Angeles"
+    },
+    {
+      "day": 7,
+      "date": "2026-03-0",
+      "city": "Los Angeles",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 4725,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Kuromon Market",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Sumiyoshi Taisha",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Tosabori Chanot",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Kuromon Market food stalls",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Kushikatsu Daruma",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 2",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 2",
+          "to": "Lunch venue 2",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 2",
+          "to": "Afternoon activity 2",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 2",
+          "to": "Dinner venue 2",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 2",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-04-1",
+      "city": "Los Angeles",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 4725,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Osaka Aquarium",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Nara Day Trip",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Len Osaka",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Endo Sushi",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Matsusaka Beef Yakiniku M",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 3",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 3",
+          "to": "Lunch venue 3",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 3",
+          "to": "Afternoon activity 3",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 3",
+          "to": "Dinner venue 3",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 3",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "date": "2026-04-2",
+      "city": "Los Angeles",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 4725,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Universal Studios Japan",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": false
+        },
+        {
+          "name": "Tempozan Harbor Village",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Fujiya 1935 Bread",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Kinryu Ramen",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Hariju",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 4",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 4",
+          "to": "Lunch venue 4",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 4",
+          "to": "Afternoon activity 4",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 4",
+          "to": "Dinner venue 4",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 4",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "2026-04-3",
+      "city": "Los Angeles",
+      "accommodation": {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 4725,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      },
+      "activities": [
+        {
+          "name": "Osaka Castle",
+          "type": "sightseeing",
+          "description": "Popular attraction in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "3 hours",
+          "opening_hours": "9:00 AM - 6:00 PM",
+          "estimated_cost": 30,
+          "booking_required": true
+        },
+        {
+          "name": "Shinsekai",
+          "type": "activity",
+          "description": "Interesting place to visit in Osaka",
+          "location": "Osaka",
+          "estimated_duration": "2 hours",
+          "opening_hours": "10:00 AM - 8:00 PM",
+          "estimated_cost": 15,
+          "booking_required": false
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Hotel breakfast",
+          "cuisine": "Japanese/Cafe",
+          "price_range": "$-$$",
+          "location": "Near accommodation",
+          "proximity_to_activities": "Convenient starting point",
+          "recommended_dishes": [
+            "Artisanal bread and coffee",
+            "Japanese breakfast set"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Takoyaki stands in Dotonbori",
+          "cuisine": "Osaka street food",
+          "price_range": "$-$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Famous food district",
+          "recommended_dishes": [
+            "Takoyaki",
+            "Okonomiyaki",
+            "Fresh sushi"
+          ],
+          "reservation_required": false
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Kani Doraku",
+          "cuisine": "Osaka specialties",
+          "price_range": "$$$",
+          "location": "Dotonbori/Namba area",
+          "proximity_to_activities": "Evening entertainment district",
+          "recommended_dishes": [
+            "Crab feast",
+            "Kushikatsu set",
+            "Premium yakiniku beef"
+          ],
+          "reservation_required": true,
+          "reservation_info": "Reserve 1 week in advance through hotel"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Accommodation",
+          "to": "Morning activity 5",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to nearest station, 5 min walk",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (faster but \u00a51500)",
+            "Bus (slower but scenic)"
+          ]
+        },
+        {
+          "from": "Morning activity 5",
+          "to": "Lunch venue 5",
+          "recommended_mode": "Walking",
+          "route_details": "Short walk through interesting neighborhood",
+          "estimated_time": "15 minutes",
+          "estimated_cost": 0,
+          "alternative_options": [
+            "Taxi (not recommended unless bad weather)"
+          ]
+        },
+        {
+          "from": "Lunch venue 5",
+          "to": "Afternoon activity 5",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to destination station",
+          "estimated_time": "30 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Bus (more scenic but slower)"
+          ]
+        },
+        {
+          "from": "Afternoon activity 5",
+          "to": "Dinner venue 5",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line to dining area",
+          "estimated_time": "20 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if tired, \u00a51200)"
+          ]
+        },
+        {
+          "from": "Dinner venue 5",
+          "to": "Accommodation",
+          "recommended_mode": "Subway",
+          "route_details": "Take subway line back to accommodation",
+          "estimated_time": "25 minutes",
+          "estimated_cost": 220,
+          "alternative_options": [
+            "Taxi (recommended if late, \u00a51500)"
+          ]
+        }
+      ]
+    }
+  ],
+  "applied_constraints": [],
+  "constraint_verification": {
+    "passed": true,
+    "violations": []
+  }
+}

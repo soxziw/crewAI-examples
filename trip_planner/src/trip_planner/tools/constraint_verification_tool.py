@@ -1,9 +1,13 @@
-from crewai.tools import BaseTool
 from typing import Dict, List, Type, Any, Optional
 from pydantic import BaseModel, Field
 import json
 
-from trip_planner.maia_architecture import Constraint, TravelPlan
+# Import our mock BaseTool and required classes
+from src.trip_planner.tools.flight_search_tool import BaseTool
+try:
+    from trip_planner.maia_architecture import Constraint, TravelPlan
+except ImportError:
+    from src.trip_planner.maia_architecture import Constraint, TravelPlan
 
 
 class ConstraintVerificationToolInput(BaseModel):

@@ -1,6 +1,8 @@
-from crewai.tools import BaseTool
 from typing import Type
 from pydantic import BaseModel, Field
+
+# Import our mock BaseTool
+from src.trip_planner.tools.flight_search_tool import BaseTool
 
 
 class MyCustomToolInput(BaseModel):

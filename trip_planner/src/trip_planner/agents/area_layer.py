@@ -8,11 +8,18 @@ These agents handle the highest level of planning, focusing on:
 """
 
 from crewai import Agent, Task, Crew
-from crewai_tools import SerperDevTool, ScrapeWebsiteTool
+# Instead of importing from crewai_tools, use our mock implementation
 from typing import Dict, Any, List
 
-from trip_planner.maia_architecture import AgentLayer, Constraint
-from trip_planner.tools.constraint_parser_tool import ConstraintParserTool
+# Import the mock tools from crew.py
+try:
+    from trip_planner.crew import SerperDevTool, ScrapeWebsiteTool
+    from trip_planner.maia_architecture import AgentLayer, Constraint
+    from trip_planner.tools.constraint_parser_tool import ConstraintParserTool
+except ImportError:
+    from src.trip_planner.crew import SerperDevTool, ScrapeWebsiteTool
+    from src.trip_planner.maia_architecture import AgentLayer, Constraint
+    from src.trip_planner.tools.constraint_parser_tool import ConstraintParserTool
 
 
 class AreaLayerAgents:

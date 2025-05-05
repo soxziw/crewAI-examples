@@ -3,9 +3,9 @@ name = "trip_planner"
 version = "0.1.0"
 description = "trip_planner using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.8,<3.13"
 dependencies = [
-    "crewai[tools]>=0.102.0,<1.0.0",
+    "crewai",
     "google-search-results>=2.4.2",
 ]
 

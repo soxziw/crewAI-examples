@@ -10,18 +10,34 @@ import logging
 from typing import Dict, List, Any, Optional
 import os
 
-from trip_planner.maia_architecture import (
-    TravelPlan, 
-    Constraint, 
-    AgentLayer, 
-    PlanningState,
-    AgentType
-)
-from trip_planner.tools.constraint_parser_tool import ConstraintParserTool
-from trip_planner.verification.constraint_manager import ConstraintManager
-from trip_planner.agents.area_layer import AreaLayerAgents
-from trip_planner.agents.city_layer import CityLayerAgents
-from trip_planner.agents.within_city_layer import WithinCityLayerAgents
+try:
+    # When installed as a package
+    from trip_planner.maia_architecture import (
+        TravelPlan, 
+        Constraint, 
+        AgentLayer, 
+        PlanningState,
+        AgentType
+    )
+    from trip_planner.tools.constraint_parser_tool import ConstraintParserTool
+    from trip_planner.verification.constraint_manager import ConstraintManager
+    from trip_planner.agents.area_layer import AreaLayerAgents
+    from trip_planner.agents.city_layer import CityLayerAgents
+    from trip_planner.agents.within_city_layer import WithinCityLayerAgents
+except ImportError:
+    # When running directly from source
+    from src.trip_planner.maia_architecture import (
+        TravelPlan, 
+        Constraint, 
+        AgentLayer, 
+        PlanningState,
+        AgentType
+    )
+    from src.trip_planner.tools.constraint_parser_tool import ConstraintParserTool
+    from src.trip_planner.verification.constraint_manager import ConstraintManager
+    from src.trip_planner.agents.area_layer import AreaLayerAgents
+    from src.trip_planner.agents.city_layer import CityLayerAgents
+    from src.trip_planner.agents.within_city_layer import WithinCityLayerAgents
 
 # Configure logging
 logging.basicConfig(
@@ -123,17 +139,22 @@ class MAIAOrchestrator:
             logger.error(f"Error extracting constraints: {e}")
             return []
     
-    def plan_trip(self, user_request: str) -> TravelPlan:
+    def plan_trip(self, user_request: str, interactive: bool = True) -> TravelPlan:
         """
         Plan a trip based on a user's natural language request.
         
         Args:
             user_request: The user's travel request
+            interactive: Whether to show interactive progress updates
             
         Returns:
             The completed travel plan
         """
         logger.info("Starting trip planning process")
+        
+        if interactive:
+            print("\nStarting trip planning process...")
+            print("Step 1/5: Analyzing your request and extracting constraints")
         
         # Extract constraints from user request
         self.constraints = self.extract_constraints(user_request)
@@ -151,17 +172,44 @@ class MAIAOrchestrator:
         
         # Execute planning layers in sequence
         try:
+            if interactive:
+                print("\nStep 2/5: Planning your destination area and timeframe")
+                
             # Area layer planning
             self._execute_area_layer(user_request)
+            
+            if interactive:
+                print(f"  • Destination region: {self.travel_plan.destination_region}")
+                print(f"  • Travel dates: {self.travel_plan.travel_dates.get('start_date', 'TBD')} to {self.travel_plan.travel_dates.get('end_date', 'TBD')}")
+                print("\nStep 3/5: Planning cities to visit and transportation between them")
             
             # City layer planning
             self._execute_city_layer()
             
+            if interactive:
+                cities_str = ", ".join([city.get("name", "Unknown") for city in self.travel_plan.cities])
+                print(f"  • Cities: {cities_str}")
+                print(f"  • Number of intercity transits: {len(self.travel_plan.intercity_transit) if hasattr(self.travel_plan, 'intercity_transit') else 0}")
+                print("\nStep 4/5: Planning detailed activities, accommodations, and dining")
+            
             # Within-city layer planning
             self._execute_within_city_layer()
             
+            if interactive:
+                print(f"  • Activities planned for {len(self.travel_plan.activities) if hasattr(self.travel_plan, 'activities') else 0} cities")
+                print(f"  • Accommodations booked in {len(self.travel_plan.accommodations) if hasattr(self.travel_plan, 'accommodations') else 0} cities")
+                print("\nStep 5/5: Verifying all constraints and generating final itinerary")
+            
             # Final verification
             self._execute_verification_layer()
+            
+            if interactive:
+                total_violations = len(self.travel_plan.constraint_verification.get("violations", [])) if hasattr(self.travel_plan, 'constraint_verification') else 0
+                if total_violations > 0:
+                    print(f"  • Warning: Found {total_violations} constraint violations")
+                else:
+                    print("  • All constraints verified successfully")
+                print("\nTrip planning completed successfully!")
             
             logger.info("Trip planning completed successfully")
             self.planning_state = PlanningState.COMPLETED
@@ -170,6 +218,8 @@ class MAIAOrchestrator:
         except Exception as e:
             logger.error(f"Trip planning failed: {e}")
             self.planning_state = PlanningState.FAILED
+            if interactive:
+                print(f"\nError: Trip planning failed: {str(e)}")
             raise Exception(f"Trip planning failed: {str(e)}")
     
     def _execute_area_layer(self, user_request: str) -> None:
@@ -385,9 +435,9 @@ class MAIAOrchestrator:
             else:
                 # Find previous city's departure date
                 prev_city = next(c for c in self.travel_plan.cities if c["visit_order"] == city["visit_order"] - 1)
-                arrival_date = f"2026-{"03" if city["visit_order"] <= 2 else "04"}-{25 + sum(c['days'] for c in self.travel_plan.cities if c['visit_order'] < city['visit_order'])}"
+                arrival_date = f"2026-{'03' if city['visit_order'] <= 2 else '04'}-{25 + sum(c['days'] for c in self.travel_plan.cities if c['visit_order'] < city['visit_order'])}"
             
-            departure_date = f"2026-{"03" if city["visit_order"] < 2 else "04"}-{25 + sum(c['days'] for c in self.travel_plan.cities if c['visit_order'] <= city['visit_order'])}"
+            departure_date = f"2026-{'03' if city['visit_order'] < 2 else '04'}-{25 + sum(c['days'] for c in self.travel_plan.cities if c['visit_order'] <= city['visit_order'])}"
             
             # Create and run within-city crew for this city
             # In a full implementation, we would run the crew and process results
