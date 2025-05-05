@@ -1,0 +1,187 @@
+---
+# MAIA (Multi-Agent Itinerary Assistant) Task Configuration
+# Hierarchical multi-layer tasks for constraint-aware travel planning
+
+# Initial Constraint Extraction
+constraint_extraction_task:
+  agent: constraint_verifier
+  description: >
+    Extract all constraints from the user's travel request. Constraints may include budget 
+    limitations, time restrictions, accessibility requirements, personal preferences, 
+    logistical constraints, and more.
+    
+    User request: {request}
+    
+    Your output should categorize each identified constraint and specify whether it is 
+    a hard constraint (must be satisfied) or a soft constraint (preference).
+  expected_output: >
+    A comprehensive JSON list of all extracted constraints from the user request.
+
+# Area Layer Tasks
+destination_selection_task:
+  agent: destination_selector
+  description: >
+    Based on the user's request and extracted constraints, select the optimal destination 
+    region and suggest a timeframe for travel. Consider all constraints carefully and explain 
+    your reasoning.
+    
+    User request: {request}
+    
+    Your output should include:
+    1. Recommended destination region(s)
+    2. Suggested timeframe (specific dates if possible)
+    3. Reasoning for your recommendations
+    4. Any potential conflicts with the provided constraints
+    5. Alternative suggestions if there are irreconcilable constraints
+  expected_output: >
+    A detailed destination region selection with timeframe recommendations based on constraints.
+  context:
+    - constraint_extraction_task
+
+timeframe_optimization_task:
+  agent: destination_selector
+  description: >
+    Optimize the travel timeframe for the selected destination region based on the preliminary 
+    recommendation and constraints. Consider factors like seasonal weather patterns, local 
+    events, tourist high/low seasons, pricing fluctuations, and availability of key attractions.
+  expected_output: >
+    An optimized travel timeframe with detailed justification and seasonal considerations.
+  context:
+    - constraint_extraction_task
+    - destination_selection_task
+
+# City Layer Tasks
+city_selection_task:
+  agent: city_selector
+  description: >
+    Based on the destination region and timeframe, select the optimal cities to visit and 
+    determine how many days to spend in each city. Your selection should balance seeing 
+    multiple destinations with having enough time to meaningfully experience each place.
+  expected_output: >
+    A comprehensive city selection plan with recommended duration for each city.
+  context:
+    - constraint_extraction_task
+    - destination_selection_task
+    - timeframe_optimization_task
+
+intercity_transit_task:
+  agent: intercity_transit
+  description: >
+    Plan the optimal transit between the selected cities based on the recommended visit order 
+    and timeframe. Start from the origin location and include return transit to the origin location.
+    
+    For each transit segment, recommend the optimal transportation mode (flight, train, bus, car) 
+    considering factors such as distance, travel time, cost, convenience, comfort, environmental 
+    impact, and scenic value.
+  expected_output: >
+    A detailed intercity transit plan connecting all selected cities with specific recommendations 
+    for each segment.
+  context:
+    - constraint_extraction_task
+    - destination_selection_task
+    - timeframe_optimization_task
+    - city_selection_task
+
+# Within-city Layer Tasks
+activities_task:
+  agent: activities
+  description: >
+    Plan a comprehensive set of activities and points of interest to visit in each city during 
+    the designated stay. For each day of the visit, recommend activities and points of interest 
+    that provide a balanced mix of popular attractions and hidden gems, are geographically 
+    clustered to minimize transit time, account for opening hours and peak times, align with 
+    user preferences and constraints, and allow for a reasonable pace.
+  expected_output: >
+    A detailed daily activities plan for the entire stay in each city.
+  context:
+    - constraint_extraction_task
+    - city_selection_task
+    - intercity_transit_task
+
+accommodation_task:
+  agent: accommodation
+  description: >
+    Find optimal accommodation options in each city for the designated stay. Search for 
+    accommodations that are conveniently located near planned activities or public transportation, 
+    align with the user's budget constraints, offer amenities relevant to the user's preferences, 
+    have good reviews and ratings, and are available for the specified dates.
+  expected_output: >
+    A detailed list of accommodation options for each city with comprehensive information and comparisons.
+  context:
+    - constraint_extraction_task
+    - city_selection_task
+    - activities_task
+
+dining_task:
+  agent: dining
+  description: >
+    Recommend dining options in each city that complement the planned activities. For each day 
+    of the visit, recommend breakfast options, lunch options near planned activities, dinner 
+    options that showcase local cuisine and dining culture, and snack or coffee break options 
+    if appropriate.
+  expected_output: >
+    A comprehensive dining plan with recommendations for each day in each city.
+  context:
+    - constraint_extraction_task
+    - city_selection_task
+    - activities_task
+    - accommodation_task
+
+local_transit_task:
+  agent: local_transit
+  description: >
+    Plan optimal local transportation in each city for the designated stay, connecting the 
+    selected accommodation with all planned activities. Recommend the most efficient way to 
+    travel between accommodation and activities, identify the best public transportation options, 
+    suggest when walking, cycling, or taxis/rideshares are preferable, include information on 
+    costs, tickets, and transit passes, and consider factors like rush hour, weather, and safety.
+  expected_output: >
+    A detailed local transportation plan for navigating each city efficiently.
+  context:
+    - constraint_extraction_task
+    - city_selection_task
+    - activities_task
+    - accommodation_task
+    - dining_task
+
+# Verification Layer Tasks
+plan_verification_task:
+  agent: constraint_verifier
+  description: >
+    Verify that the complete travel plan satisfies all user constraints. Check each constraint 
+    against the relevant parts of the travel plan, identify any violations or potential issues, 
+    assess the severity of each violation (critical vs. minor), and suggest possible solutions 
+    or alternatives for any violations.
+  expected_output: >
+    A detailed verification report assessing the travel plan's compliance with all user constraints.
+  context:
+    - constraint_extraction_task
+    - destination_selection_task
+    - timeframe_optimization_task
+    - city_selection_task
+    - intercity_transit_task
+    - activities_task
+    - accommodation_task
+    - dining_task
+    - local_transit_task
+
+itinerary_compilation_task:
+  agent: itinerary_compiler
+  description: >
+    Compile all planning results into a comprehensive, easy-to-follow travel itinerary. 
+    Organize information logically by day and location, include all key details for each 
+    aspect of the trip (transportation, accommodations, activities, dining), ensure proper 
+    timing and logistics for all elements, and create a polished, user-friendly document.
+  expected_output: >
+    A complete, day-by-day travel itinerary that combines all aspects of the trip planning.
+  context:
+    - constraint_extraction_task
+    - destination_selection_task
+    - timeframe_optimization_task
+    - city_selection_task
+    - intercity_transit_task
+    - activities_task
+    - accommodation_task
+    - dining_task
+    - local_transit_task
+    - plan_verification_task

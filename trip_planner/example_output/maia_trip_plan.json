@@ -1,0 +1,512 @@
+{
+  "destination_region": "Japan",
+  "travel_dates": {
+    "start_date": "2026-03-25",
+    "end_date": "2026-04-05"
+  },
+  "cities": [
+    {
+      "name": "Tokyo",
+      "country": "Japan",
+      "days": 5,
+      "justification": "As Japan's vibrant capital, Tokyo offers a mix of traditional and ultra-modern attractions.",
+      "key_attractions": [
+        "Shibuya Crossing",
+        "Senso-ji Temple",
+        "Tokyo Skytree",
+        "Meiji Shrine",
+        "Ueno Park for cherry blossoms"
+      ],
+      "visit_order": 1
+    },
+    {
+      "name": "Kyoto",
+      "country": "Japan",
+      "days": 4,
+      "justification": "Kyoto is Japan's cultural heart with numerous temples, traditional gardens, and geisha districts.",
+      "key_attractions": [
+        "Fushimi Inari Shrine",
+        "Kinkaku-ji (Golden Pavilion)",
+        "Arashiyama Bamboo Grove",
+        "Philosopher's Path for cherry blossoms"
+      ],
+      "visit_order": 2
+    },
+    {
+      "name": "Osaka",
+      "country": "Japan",
+      "days": 2,
+      "justification": "Nearby Kyoto, Osaka offers amazing food, a vibrant atmosphere, and serves as a good base for a day trip to Nara.",
+      "key_attractions": [
+        "Osaka Castle",
+        "Dotonbori district",
+        "Kuromon Market",
+        "Osaka Aquarium"
+      ],
+      "visit_order": 3
+    }
+  ],
+  "intercity_transit": [
+    {
+      "from": "San Francisco, CA",
+      "to": "Tokyo, Japan",
+      "date": "2026-03-25",
+      "mode": "flight",
+      "details": {
+        "provider": "ANA",
+        "flight_number": "NH7",
+        "departure_time": "11:05 AM",
+        "arrival_time": "3:25 PM (next day)",
+        "duration": "11h 20m",
+        "cost": 950,
+        "booking_info": "www.ana.co.jp or major booking sites"
+      }
+    },
+    {
+      "from": "Tokyo, Japan",
+      "to": "Kyoto, Japan",
+      "date": "2026-03-30",
+      "mode": "train",
+      "details": {
+        "provider": "JR Shinkansen",
+        "departure_time": "10:00 AM",
+        "arrival_time": "12:15 PM",
+        "duration": "2h 15m",
+        "cost": 135,
+        "booking_info": "Japan Rail Pass recommended for tourists"
+      }
+    },
+    {
+      "from": "Kyoto, Japan",
+      "to": "Osaka, Japan",
+      "date": "2026-04-03",
+      "mode": "train",
+      "details": {
+        "provider": "JR Special Rapid Service",
+        "departure_time": "9:30 AM",
+        "arrival_time": "10:00 AM",
+        "duration": "30m",
+        "cost": 15,
+        "booking_info": "Japan Rail Pass covers this journey"
+      }
+    },
+    {
+      "from": "Osaka, Japan",
+      "to": "San Francisco, CA",
+      "date": "2026-04-05",
+      "mode": "flight",
+      "details": {
+        "provider": "United Airlines",
+        "flight_number": "UA35",
+        "departure_time": "5:20 PM",
+        "arrival_time": "11:05 AM (same day)",
+        "duration": "9h 45m",
+        "cost": 980,
+        "booking_info": "www.united.com or major booking sites"
+      }
+    }
+  ],
+  "accommodations": {
+    "Tokyo": [
+      {
+        "name": "Hotel Century Southern Tower",
+        "type": "hotel",
+        "location": "Shinjuku, Tokyo",
+        "proximity_to_activities": "Central location, close to Shinjuku Station",
+        "price_per_night": 150,
+        "total_price": 750,
+        "rating": 4.5,
+        "amenities": [
+          "Free WiFi",
+          "Air conditioning",
+          "Restaurant",
+          "Bar",
+          "24-hour front desk"
+        ],
+        "pros": [
+          "Excellent location",
+          "Great views",
+          "Modern rooms"
+        ],
+        "cons": [
+          "Smaller rooms",
+          "Busy area"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      }
+    ],
+    "Kyoto": [
+      {
+        "name": "Kyoto Granbell Hotel",
+        "type": "hotel",
+        "location": "Gion, Kyoto",
+        "proximity_to_activities": "In the heart of the historic Gion district",
+        "price_per_night": 140,
+        "total_price": 560,
+        "rating": 4.4,
+        "amenities": [
+          "Free WiFi",
+          "Public bath",
+          "Restaurant",
+          "Bar",
+          "Bicycle rental"
+        ],
+        "pros": [
+          "Historic location",
+          "Modern Japanese design",
+          "Near temples"
+        ],
+        "cons": [
+          "Rooms can be small",
+          "Popular area can be busy"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      }
+    ],
+    "Osaka": [
+      {
+        "name": "Hotel Nikko Osaka",
+        "type": "hotel",
+        "location": "Namba, Osaka",
+        "proximity_to_activities": "Connected to Shinsaibashi shopping district",
+        "price_per_night": 135,
+        "total_price": 270,
+        "rating": 4.3,
+        "amenities": [
+          "Free WiFi",
+          "Multiple restaurants",
+          "Bar",
+          "Fitness center"
+        ],
+        "pros": [
+          "Prime location",
+          "Quality service",
+          "Good amenities"
+        ],
+        "cons": [
+          "Business-oriented",
+          "Extra charges for facilities"
+        ],
+        "booking_info": "Book directly on hotel website or through major booking platforms",
+        "cancellation_policy": "Free cancellation up to 7 days before check-in"
+      }
+    ]
+  },
+  "activities": {
+    "Tokyo": [
+      {
+        "day": 1,
+        "date": "2026-03-26",
+        "activities": [
+          {
+            "name": "Shibuya Crossing",
+            "type": "sightseeing",
+            "description": "One of Tokyo's most iconic attractions",
+            "location": "Central Tokyo",
+            "estimated_duration": "2 hours",
+            "opening_hours": "9:00 AM - 5:00 PM",
+            "estimated_cost": 15,
+            "booking_required": false
+          },
+          {
+            "name": "Akihabara Electronics District",
+            "type": "activity",
+            "description": "Popular Tokyo attraction",
+            "location": "Tokyo",
+            "estimated_duration": "3 hours",
+            "opening_hours": "10:00 AM - 6:00 PM",
+            "estimated_cost": 20,
+            "booking_required": false
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "date": "2026-03-27",
+        "activities": [
+          {
+            "name": "Senso-ji Temple",
+            "type": "sightseeing",
+            "description": "Ancient Buddhist temple in Asakusa",
+            "location": "Asakusa, Tokyo",
+            "estimated_duration": "2 hours",
+            "opening_hours": "6:00 AM - 5:00 PM",
+            "estimated_cost": 0,
+            "booking_required": false
+          },
+          {
+            "name": "Harajuku Shopping",
+            "type": "activity",
+            "description": "Trendy shopping district",
+            "location": "Harajuku, Tokyo",
+            "estimated_duration": "3 hours",
+            "opening_hours": "11:00 AM - 8:00 PM",
+            "estimated_cost": 0,
+            "booking_required": false
+          }
+        ]
+      }
+    ],
+    "Kyoto": [
+      {
+        "day": 1,
+        "date": "2026-03-31",
+        "activities": [
+          {
+            "name": "Fushimi Inari Shrine",
+            "type": "sightseeing",
+            "description": "Famous shrine with thousands of torii gates",
+            "location": "Southern Kyoto",
+            "estimated_duration": "3 hours",
+            "opening_hours": "24 hours",
+            "estimated_cost": 0,
+            "booking_required": false
+          },
+          {
+            "name": "Nishiki Market",
+            "type": "activity",
+            "description": "Lively food market",
+            "location": "Central Kyoto",
+            "estimated_duration": "2 hours",
+            "opening_hours": "9:00 AM - 6:00 PM",
+            "estimated_cost": 0,
+            "booking_required": false
+          }
+        ]
+      }
+    ]
+  },
+  "dining": {
+    "Tokyo": [
+      {
+        "day": 1,
+        "date": "2026-03-26",
+        "meals": [
+          {
+            "meal_type": "breakfast",
+            "venue": "Hotel breakfast",
+            "cuisine": "Japanese/International",
+            "price_range": "$-$$",
+            "location": "Hotel",
+            "proximity_to_activities": "On-site",
+            "recommended_dishes": [
+              "Traditional Japanese breakfast set",
+              "Pastries and coffee"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "lunch",
+            "venue": "Ichiran Ramen",
+            "cuisine": "Japanese",
+            "price_range": "$$",
+            "location": "Shibuya",
+            "proximity_to_activities": "Near Shibuya Crossing",
+            "recommended_dishes": [
+              "Tonkotsu ramen",
+              "Flavored egg"
+            ],
+            "reservation_required": false
+          },
+          {
+            "meal_type": "dinner",
+            "venue": "Gonpachi Nishi-Azabu",
+            "cuisine": "Japanese",
+            "price_range": "$$$",
+            "location": "Roppongi",
+            "proximity_to_activities": "15 minutes by taxi from Shibuya",
+            "recommended_dishes": [
+              "Soba noodles",
+              "Yakitori",
+              "Tempura"
+            ],
+            "reservation_required": true,
+            "reservation_info": "Reserve 1-2 weeks in advance through concierge"
+          }
+        ]
+      }
+    ]
+  },
+  "local_transit": {
+    "Tokyo": [
+      {
+        "day": 1,
+        "date": "2026-03-26",
+        "journeys": [
+          {
+            "from": "Hotel Century Southern Tower",
+            "to": "Shibuya Crossing",
+            "recommended_mode": "Subway",
+            "route_details": "Take JR Yamanote Line from Shinjuku to Shibuya (3 stops)",
+            "estimated_time": "15 minutes",
+            "estimated_cost": 200,
+            "alternative_options": [
+              "Taxi (faster but ¥1500)",
+              "Walking (30 minutes)"
+            ]
+          },
+          {
+            "from": "Shibuya Crossing",
+            "to": "Akihabara Electronics District",
+            "recommended_mode": "Subway",
+            "route_details": "Take JR Yamanote Line from Shibuya to Akihabara (8 stops)",
+            "estimated_time": "25 minutes",
+            "estimated_cost": 240,
+            "alternative_options": [
+              "Taxi (not recommended due to traffic)",
+              "Bus (longer but more scenic)"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-03-25",
+      "city": "Tokyo",
+      "special_event": "Arrival in Japan",
+      "accommodation": {
+        "name": "Hotel Century Southern Tower",
+        "location": "Shinjuku, Tokyo"
+      },
+      "activities": [],
+      "meals": [
+        {
+          "meal_type": "dinner",
+          "venue": "Hotel restaurant",
+          "cuisine": "Japanese",
+          "price_range": "$$"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Narita Airport",
+          "to": "Hotel Century Southern Tower",
+          "recommended_mode": "Airport Express Train + Taxi",
+          "estimated_time": "90 minutes",
+          "estimated_cost": 3500
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-03-26",
+      "city": "Tokyo",
+      "accommodation": {
+        "name": "Hotel Century Southern Tower",
+        "location": "Shinjuku, Tokyo"
+      },
+      "activities": [
+        {
+          "name": "Shibuya Crossing",
+          "estimated_duration": "2 hours",
+          "description": "One of Tokyo's most iconic attractions"
+        },
+        {
+          "name": "Akihabara Electronics District",
+          "estimated_duration": "3 hours",
+          "description": "Popular Tokyo attraction"
+        }
+      ],
+      "meals": [
+        {
+          "meal_type": "breakfast",
+          "venue": "Hotel breakfast",
+          "cuisine": "Japanese/International"
+        },
+        {
+          "meal_type": "lunch",
+          "venue": "Ichiran Ramen",
+          "cuisine": "Japanese"
+        },
+        {
+          "meal_type": "dinner",
+          "venue": "Gonpachi Nishi-Azabu",
+          "cuisine": "Japanese"
+        }
+      ],
+      "local_transit": [
+        {
+          "from": "Hotel",
+          "to": "Shibuya Crossing",
+          "recommended_mode": "Subway",
+          "estimated_time": "15 minutes"
+        },
+        {
+          "from": "Shibuya",
+          "to": "Akihabara",
+          "recommended_mode": "Subway",
+          "estimated_time": "25 minutes"
+        }
+      ]
+    }
+  ],
+  "applied_constraints": [
+    {
+      "type": "budget",
+      "description": "Keep total trip cost under $5000 per person",
+      "value": 5000,
+      "is_hard_constraint": true,
+      "layer": "area"
+    },
+    {
+      "type": "time",
+      "description": "Trip duration of 10 days",
+      "value": 10,
+      "is_hard_constraint": true,
+      "layer": "area"
+    },
+    {
+      "type": "time",
+      "description": "Travel dates from late March to early April 2026 (cherry blossom season)",
+      "value": "2026-03-25-2026-04-05",
+      "is_hard_constraint": true,
+      "layer": "area"
+    },
+    {
+      "type": "preference",
+      "description": "Include cultural/historical activities",
+      "is_hard_constraint": false,
+      "layer": "within_city"
+    },
+    {
+      "type": "preference",
+      "description": "Include culinary experiences",
+      "is_hard_constraint": false,
+      "layer": "within_city"
+    },
+    {
+      "type": "logistics",
+      "description": "Include flight transportation",
+      "is_hard_constraint": true,
+      "layer": "city"
+    },
+    {
+      "type": "preference",
+      "description": "Clean, convenient hotels (3-4 star range)",
+      "is_hard_constraint": false,
+      "layer": "within_city"
+    },
+    {
+      "type": "preference",
+      "description": "Use public transportation as much as possible",
+      "is_hard_constraint": false,
+      "layer": "within_city"
+    },
+    {
+      "type": "constraint",
+      "description": "Comfortable with walking up to 5 miles per day",
+      "value": 5,
+      "is_hard_constraint": true,
+      "layer": "verification"
+    }
+  ],
+  "constraint_verification": {
+    "passed": true,
+    "violations": []
+  }
+}
